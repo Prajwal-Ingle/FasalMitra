@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+.gitignore
+.env
+.env.*
+venv/
+.venv/
+frontend/node_modules/
+frontend/dist/
+tests/
+.agent/
+.agents/
+.impeccable/
+*.log

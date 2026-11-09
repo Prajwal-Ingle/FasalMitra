@@ -6,7 +6,7 @@ from pathlib import Path
 # Base Paths
 BASE_DIR = Path(__file__).resolve().parent
 MODELS_DIR = BASE_DIR / "models"
-MODEL_PATH = MODELS_DIR / "best.pt"
+MODEL_PATH = MODELS_DIR / "best.onnx" if (MODELS_DIR / "best.onnx").exists() else MODELS_DIR / "best.pt"
 YAML_PATH = MODELS_DIR / "pests.yaml"
 ASSETS_DIR = BASE_DIR / "assets"
 SAMPLES_DIR = ASSETS_DIR / "samples"

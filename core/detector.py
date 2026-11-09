@@ -35,7 +35,7 @@ class PestDetector:
 
         try:
             # Load Ultralytics model
-            self.model = YOLO(str(self.model_path))
+            self.model = YOLO(str(self.model_path), task="detect")
             # Model class names dictionary {0: 'name', ...}
             if hasattr(self.model, "names") and isinstance(self.model.names, dict):
                 self.class_names = self.model.names
